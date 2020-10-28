@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           rm: true
-          source: "bin/build/"
+          source: "/home/runner/work/api-skeleton/api-skeleton/API/bin/build/"
           target: "/home/ubuntu/projects/backend-api"
 
       - name: Restart server
