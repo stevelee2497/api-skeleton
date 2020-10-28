@@ -23,3 +23,5 @@ jobs:
       run: |
         cd API
         dotnet build -c Release -o bin/build
+        cd bin/build
+        ls
