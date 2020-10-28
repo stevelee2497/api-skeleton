@@ -26,12 +26,10 @@ jobs:
           cd API
           dotnet build -c Release -o bin/build
           pwd
+          ls
 
       - name: Copy build files to server
         uses: appleboy/scp-action@master
-        run: |
-          pwd
-          ls
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
