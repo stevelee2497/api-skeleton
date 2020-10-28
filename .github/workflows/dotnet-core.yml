@@ -32,7 +32,8 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          source: "bin/build"
+          rm: true
+          source: "bin/build/"
           target: "/home/ubuntu/projects/backend-api"
 
       - name: Restart server
